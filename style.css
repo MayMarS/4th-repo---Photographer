@@ -1,0 +1,432 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    color: #101010;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* Header */
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+header{
+    padding-top: 30px;
+}
+a{
+    color: #101010;
+    text-decoration: none;
+}
+.link_logo{
+    display: flex;
+}
+.header_logo_img{
+    width: 110px;
+    height: auto;
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+.header_nav li:not(li:last-child){
+    margin-right: 53px;
+}
+header .tel{
+    color: #A52424;
+}
+
+/* Section Welcome */
+.welcome {
+    display: flex;
+    justify-content: space-between;
+}
+.welcome_text{
+    width: 45%;
+    padding: 120px 0 370px 0;
+}
+h1{
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 88px;
+    margin: 0 0 20px 0;
+}
+.welcome_text p{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 31px;
+}
+.welcome_btn {
+    width: fit-content;
+    height: 60px;
+    color: #A52424;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    border: 2px solid #A52424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    margin-top: 60px;
+    transition: .3s;
+}
+.welcome_btn:hover{
+    background: #A52424;
+    border: 2px solid #A52424;
+    color: white;
+}
+.welcome_photo{
+    flex: 1;
+}
+.welcome_photo img{
+    width: 675px;
+    height: auto;
+    padding-top: 20px;
+}
+
+/* Section About me */
+.about_me{
+    width: 100%;
+    display: flex;
+}
+h2{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    margin: 0 0 50px 0;
+}
+.about_me h2{
+    margin-bottom: 90px;
+}
+.about_me_left{
+    width: 475px;
+}
+.rectangle_left{
+    position: relative;
+}
+.rectangle_left::before{
+    content: "";
+    background: #FFFFFF;
+    box-shadow: 0px 6px 10px 3px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    bottom: -40px;
+    right: 140px;
+}
+.rectangle_left img{
+    width: 278px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+.rectangle_left h3{
+    color: #A52424;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 31px;
+    margin: 30px 0 0 100px;
+    position: relative;
+}
+.about_me_right{
+    flex: 1;
+    margin-left: 20px;
+    padding-bottom: 180px;
+}
+.about_me_right h3{
+    color: #A52424;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 31px;
+    margin: 70px 0 20px 0;
+}
+.about_me_right p{
+    line-height: 23px;
+}
+.rectangle_right{
+    position: relative;
+    padding-right: 30px;
+    margin-top: 50px;
+}
+.rectangle_right::before{
+    content: "";
+    background: #FFFFFF;
+    box-shadow: 0px 6px 10px 3px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: -30px;
+    left: 105px;
+    bottom: -30px;
+    right: 0;
+}
+.about_me_right img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+}
+
+/* Section Portfolio */
+.portfolio_block{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+.portfolio_item{
+    width: 32%;
+}
+.portfolio_item img{
+    width: 100%;
+    height: 567px;
+    display: flex;
+}
+.portfolio_item h3{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 31px;
+    margin: 20px 0 10px 0;
+}
+.portfolio_item p{
+    line-height: 23px;
+    margin: 0;
+}
+.portfolio_btn{
+    width: fit-content;
+    height: 60px;
+    color: #A52424;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    border: 2px solid #A52424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    margin-top: 20px;
+    transition: .3s;
+}
+.portfolio_btn:hover{
+    background: #A52424;
+    border: 2px solid #A52424;
+    color: white;
+}
+
+/* Section Prices */
+.prices_block{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+.photosession, .video{
+    width: 45%;
+    padding: 0 40px 25px 40px;
+    position: relative;
+}
+.photosession::before, .video::before{
+    content: "";
+    background: #FFFFFF;
+    box-shadow: 0px 6px 10px 3px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.prices_block img{
+    width: 290px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+.prices_block h3{
+    color: #A52424;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    position: relative;
+}
+.prices_details, .prices_order{
+    position: relative;
+}
+.prices_item{
+    display: flex;
+    justify-content: space-between;
+}
+.prices_item span{
+    margin: 5px 0;
+}
+.prices_item span:first-child{
+    line-height: 22px;
+}
+.prices_item span:last-child{
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.prices_order{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.prices_order span{
+    color: #A52424;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+.prices_btn{
+    width: fit-content;
+    height: 60px;
+    color: #A52424;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    border: 2px solid #A52424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    transition: .3s;
+}
+.prices_btn:hover{
+    background: #A52424;
+    color: white;
+    border: 2px solid #A52424;
+}
+
+/* Section Order */
+.order_block{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+.order_block_photos{
+    width: 50%;
+    height: 585px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.order_photo_1{
+    width: 285px;
+    height: auto;
+}
+.order_photo_2{
+    width: 330px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.order_block_form{
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_name, .input_mail{
+    width: 100%;
+    height: 60px;
+    color: #101010;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    background: #FFFFFF;
+    border: 0.5px solid rgba(35, 35, 35, 0.35);
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.textarea {
+    width: 100%;
+    height: 220px;
+    color: #101010;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    background: #FFFFFF;
+    border: 0.5px solid rgba(35, 35, 35, 0.35);
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.input_name, .input_mail:focus, .textarea:focus{
+    outline: none;
+}
+.input_name::placeholder, .input_mail::placeholder, .textarea::placeholder{
+    color: rgba(35, 35, 35, 0.35);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+.form_btn{
+    width: 100%;
+    height: 60px;
+    color: #A52424;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    background: white;
+    border: 2px solid #A52424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.form_btn:hover{
+    background: #A52424;
+    color: white;
+    border: 2px solid #A52424;
+}
+
+/* Footer */
+footer{
+    border-top: 0.5px solid rgba(35, 35, 35, 0.35);
+}
+.footer_contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.footer_logo_img{
+    width: 114px;
+    height: auto;
+}
+.footer_contacts li{
+    margin-left: 55px;
+}
+.social_media{
+    width: 30px;
+    height: auto;
+}
+.facebook{
+    width: 25px;
+    height: auto;
+}
+footer .tel{
+    color: #A52424;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 31px;
+}
